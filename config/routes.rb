@@ -1,3 +1,21 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+  root 'products#index'
+
+  # portfolio
+  resources :products, only: [:index]
+  resource  :profile,  only: [:show]
+  resource  :contact,  only: [:show]
+
+  # blog
+  namespace :blog do
+    resources :articles
+  end
+
+  # products
+  namespace :products do
+    # btng
+    resource :btng, only: [:show]
+
+    # booklist
+  end
 end
