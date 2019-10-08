@@ -1,0 +1,26 @@
+.portfolio-footer-c_menus {
+  display: flex;
+  justify-content: center;
+}
+.portfolio-footer-c_items_title {
+  margin: 10px 0 5px;
+  font-size: 16px;
+  font-weight: bold;
+}
+.portfolio-footer-c_item > a {
+  font-size: 14px;
+  color: rgb(227, 250, 229);
+}
+.portfolio-footer-c_item > a:hover {
+  text-decoration: underline;
+}
+
+.portfolio-footer-c_empty {
+  flex-basis: 10%;
+}
+
+.portfolio-footer-c_copyright {
+  margin-top: 30px;
+  text-align: center;
+  letter-spacing: 1px;
+}
