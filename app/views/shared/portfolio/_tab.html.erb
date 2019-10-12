@@ -1,5 +1,5 @@
 <div class="portfolio-l-tabs">
-  <%= link_to(products_path, class: "portfolio-tab-c_item #{'portfolio-tab-c_item_active' if current_page?(products_path)}") do %>
+  <%= link_to(products_path, class: "portfolio-tab-c_item #{'portfolio-tab-c_item_active' if current_page?(products_path) | current_page?(root_path)}") do %>
     <div class="portfolio-tab-c_item_text">PRODUCTS</div>
   <% end %>
 
