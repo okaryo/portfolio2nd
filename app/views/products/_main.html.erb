@@ -1,0 +1,16 @@
+<div class="portfolio-l-main">
+  <div class="portfolio-main-p_products">
+    <% @products.each do |product| %>
+      <div class="portfolio-main-p_product_unit">
+        <img class="portfolio-main-p_product_img" src=<%= webpack_asset_path('images/' + product[:name] + '.png') %> alt=<%= product[:name] %>>
+        <div class="portfolio-main-p_product_text">
+          <p class="portfolio-main-p_product_name"><%= product[:name] %></p>
+          <p class="portfolio-main-p_product_date"><%= product[:date] %></p>
+          <% product[:tags].each do |tag| %>
+            <span class="portfolio-main-p_prodacut_tag"><%= tag %></span>
+          <% end %>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>
