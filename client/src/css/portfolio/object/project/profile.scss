@@ -1,0 +1,27 @@
+.portfolio-profile-p_menus {
+  display: flex;
+  flex-direction: column;
+}
+.portfolio-profile-p_list_unit {
+  align-self: center;
+  width: 60%;
+  margin-bottom: 35px;
+}
+.portfolio-profile-p_list_title {
+  padding: .5em;
+  border: 3px solid rgb(114, 202, 126);
+  border-radius: 3em .7em 2em .7em/.7em 2em .7em 3em;
+  margin-bottom: 15px;
+}
+.portfolio-profile-p_personal_img {
+  display: inline-block;
+  height: 100px;
+  width: 115px;
+  border: solid 1px #e1e4e8;
+  border-radius: 3px;
+  vertical-align: middle;
+}
+.portfolio-profile-p_personal_name {
+  display: inline-block;
+  margin-left: 15px;
+}
