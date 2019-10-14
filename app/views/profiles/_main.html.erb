@@ -1,56 +1,63 @@
-<div class="portfolio-l-main portfolio-profile-p_menus">
-  <ul class="portfolio-profile-p_list_unit">
-    <h2 class="portfolio-profile-p_list_title">I am</h2>
-    <div class="portfolio-profile-p_list_container">
-      <img class="portfolio-profile-p_personal_img" src=<%= webpack_asset_path('images/oba.png') %> alt='personal image'>
-      <div class="portfolio-profile-p_personal_name">
-        <p>Offline Name: Ryotaro Oka</p>
-        <p>Online Name: okaryo / オカリヨ</p>
+<div class="portfolio-l-main">
+  <div class="portfolio-profile-p_menus">
+    <ul class="portfolio-profile-p_list_unit">
+      <h2 class="portfolio-profile-p_list_title">I am</h2>
+      <div class="portfolio-profile-p_list_container">
+        <img class="portfolio-profile-p_personal_img" src=<%= webpack_asset_path('images/oba.png') %> alt='personal image'>
+        <div class="portfolio-profile-p_personal_name">
+          <p>Offline Name: Ryotaro Oka</p>
+          <p>Online Name: okaryo / オカリヨ</p>
+        </div>
       </div>
-    </div>
-  </ul>
+    </ul>
 
-  <ul class="portfolio-profile-p_list_unit">
-    <h2 class="portfolio-profile-p_list_title">Experience</h2>
-    <ul class="portfolio-profile-p_experience_unit">
-      <li class="portfolio-profile-p_experience_main_text">Web engineer (Aug. 2019 - present)</li>
-      <li class="portfolio-profile-p_experience_sub_text">internship</li>
+    <ul class="portfolio-profile-p_list_unit">
+      <h2 class="portfolio-profile-p_list_title">Experience</h2>
+      <ul class="portfolio-profile-p_experience_unit">
+        <li class="portfolio-profile-p_experience_main_text">Web engineer (Aug. 2019 - present)</li>
+        <li class="portfolio-profile-p_experience_sub_text">internship</li>
+      </ul>
+      <ul class="portfolio-profile-p_experience_unit">
+        <li class="portfolio-profile-p_experience_main_text">cram school teacher (May 2018 - Mar. 2019)</li>
+        <li class="portfolio-profile-p_experience_sub_text">part time job</li>
+      </ul>
+      <ul class="portfolio-profile-p_experience_unit">
+        <li class="portfolio-profile-p_experience_main_text">baker (May 2015 - Feb. 2017)</li>
+        <li class="portfolio-profile-p_experience_sub_text">part time job</li>
+      </ul>
     </ul>
-    <ul class="portfolio-profile-p_experience_unit">
-      <li class="portfolio-profile-p_experience_main_text">cram school teacher (May 2018 - Mar. 2019)</li>
-      <li class="portfolio-profile-p_experience_sub_text">part time job</li>
-    </ul>
-    <ul class="portfolio-profile-p_experience_unit">
-      <li class="portfolio-profile-p_experience_main_text">baker (May 2015 - Feb. 2017)</li>
-      <li class="portfolio-profile-p_experience_sub_text">part time job</li>
-    </ul>
-  </ul>
 
-  <ul class="portfolio-profile-p_list_unit">
-    <h2 class="portfolio-profile-p_list_title">Education</h2>
-    <ul class="portfolio-profile-p_education_unit">
-      <li class="portfolio-profile-p_education_main_text">The University of Tokyo, Faculty of Law (Apr. 2018 - present)</li>
-      <li class="portfolio-profile-p_education_sub_text">DepartmentⅠ: General Legal Studies Course</li>
+    <ul class="portfolio-profile-p_list_unit">
+      <h2 class="portfolio-profile-p_list_title">Education</h2>
+      <ul class="portfolio-profile-p_education_unit">
+        <li class="portfolio-profile-p_education_main_text">The University of Tokyo, Faculty of Law (Apr. 2018 - present)</li>
+        <li class="portfolio-profile-p_education_sub_text">DepartmentⅠ: General Legal Studies Course</li>
+      </ul>
+      <ul class="portfolio-profile-p_education_unit">
+        <li class="portfolio-profile-p_education_main_text">Taking a year off from university (Apr. 2017 - Mar. 2018)</li>
+        <li class="portfolio-profile-p_education_sub_text">Lost the meaning of life</li>
+      </ul>
+      <ul class="portfolio-profile-p_education_unit">
+        <li class="portfolio-profile-p_education_main_text">The University of Tokyo, Faculty of Arts and Sciences (Apr. 2015 - Mar. 2017)</li>
+        <li class="portfolio-profile-p_education_sub_text">Human Sciences Ⅰ</li>
+      </ul>
+      <ul class="portfolio-profile-p_education_unit">
+        <li class="portfolio-profile-p_education_main_text">SUNDAI Ochanomizu3 LB→LA (Apr. 2014 - Mar. 2015)</li>
+        <li class="portfolio-profile-p_education_sub_text">Ronin</li>
+      </ul>
     </ul>
-    <ul class="portfolio-profile-p_education_unit">
-      <li class="portfolio-profile-p_education_main_text">Taking a year off from university (Apr. 2017 - Mar. 2018)</li>
-      <li class="portfolio-profile-p_education_sub_text">Lost the meaning of life</li>
-    </ul>
-    <ul class="portfolio-profile-p_education_unit">
-      <li class="portfolio-profile-p_education_main_text">The University of Tokyo, Faculty of Arts and Sciences (Apr. 2015 - Mar. 2017)</li>
-      <li class="portfolio-profile-p_education_sub_text">Human Sciences Ⅰ</li>
-    </ul>
-    <ul class="portfolio-profile-p_education_unit">
-      <li class="portfolio-profile-p_education_main_text">SUNDAI Ochanomizu3 LB→LA (Apr. 2014 - Mar. 2015)</li>
-      <li class="portfolio-profile-p_education_sub_text">Ronin</li>
-    </ul>
-  </ul>
 
-  <ul class="portfolio-profile-p_list_unit">
-    <h2 class="portfolio-profile-p_list_title">Keywords</h2>
-  </ul>
+    <ul class="portfolio-profile-p_list_unit">
+      <h2 class="portfolio-profile-p_list_title">Skill</h2>
+    </ul>
 
-  <ul class="portfolio-profile-p_list_unit">
-    <h2 class="portfolio-profile-p_list_title">Social Activity</h2>
-  </ul>
+    <ul class="portfolio-profile-p_list_unit">
+      <h2 class="portfolio-profile-p_list_title">Social Activity</h2>
+      <% @tags.each do |tag| %>
+        <a href="#" class="portfolio-main-p_portfolio_social_tag">
+          <span class="portfolio-main-p_portfolio_social_tag_text"><%= tag %></span>
+        </a>
+      <% end %>
+    </ul>
+  </div>
 </div>
