@@ -48,14 +48,13 @@
     </ul>
 
     <ul class="portfolio-profile-p_list_unit">
-      <h2 class="portfolio-profile-p_list_title">Skill</h2>
-    </ul>
-
-    <ul class="portfolio-profile-p_list_unit">
       <h2 class="portfolio-profile-p_list_title">Social Activity</h2>
       <% @tags.each do |tag| %>
-        <a href="#" class="portfolio-main-p_portfolio_social_tag">
-          <span class="portfolio-main-p_portfolio_social_tag_text"><%= tag %></span>
+        <a href=<%= tag[:link] %> class="portfolio-main-p_portfolio_social_tag">
+          <% if tag[:img] %>
+            <img src=<%= webpack_asset_path("images/profile/#{tag[:name]}.png") %> alt='qiita-logo' class="portfolio-main-p_portfolio_social_tag_img">
+          <% end %>
+          <span class="portfolio-main-p_portfolio_social_tag_text"><%= tag[:name] %></span>
         </a>
       <% end %>
     </ul>
