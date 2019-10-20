@@ -1,2 +1,22 @@
 <div class="portfolio-l-main">
+  <div class="portfolio-contact-p_container">
+    <div class="portfolio-contact-p_item">
+      <p class="portfolio-contact-p_top_text">Feel free to contact me!</p>
+    </div>
+
+    <div class="portfolio-contact-p_item">
+      <div class="portfolio-contact-p_form_body">
+        
+        <!%= form_tag("/login") do %>
+          <p>E-mail</p>
+          <input name="email" value="未実装のためご用の方はTwitterまでどうぞ">
+          <p>Subject</p>
+          <input name="subject" value="未実装のためご用の方はTwitterまでどうぞ">
+          <p>Message</p>
+          <textarea name="body" rows="8">not implemented, so please go to Twitter</textarea>
+          <input type="submit" value="Not Send">
+        <!% end %>
+      </div>
+    </div>
+  </div>
 </div>
