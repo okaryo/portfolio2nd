@@ -6,15 +6,15 @@
 
     <div class="portfolio-contact-p_item">
       <div class="portfolio-contact-p_form_body">
-        <!%= form_tag("/login") do %>
+        <%= form_for(@contact, url: contact_path) do %>
           <p>E-mail</p>
-          <input name="email" value="未実装のためご用の方はTwitterまでどうぞ">
+          <%= text_field :contact, :email %>
           <p>Subject</p>
-          <input name="subject" value="未実装のためご用の方はTwitterまでどうぞ">
+          <%= text_field :contact, :subject %>
           <p>Message</p>
-          <textarea name="body" rows="8">not implemented, so please go to Twitter</textarea>
-          <input type="submit" value="Not Send">
-        <!% end %>
+          <%= text_area :contact, :message, rows: 8 %>
+          <%= submit_tag 'Send' %>
+        <% end %>
       </div>
     </div>
   </div>
