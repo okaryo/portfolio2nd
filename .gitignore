@@ -33,3 +33,6 @@
 client/node_modules
 client/yarn-error.log
 public/assets
+
+# Ignore .env
+.env

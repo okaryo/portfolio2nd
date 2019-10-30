@@ -1,2 +1,21 @@
 <div class="portfolio-l-main">
+  <div class="portfolio-contact-p_container">
+    <div class="portfolio-contact-p_item">
+      <p class="portfolio-contact-p_top_text">Feel free to contact me!</p>
+    </div>
+
+    <div class="portfolio-contact-p_item">
+      <div class="portfolio-contact-p_form_body">
+        <%= form_for(@contact, url: contact_path) do %>
+          <p>E-mail</p>
+          <%= text_field :contact, :email %>
+          <p>Subject</p>
+          <%= text_field :contact, :subject %>
+          <p>Message</p>
+          <%= text_area :contact, :message, rows: 8 %>
+          <%= submit_tag 'Send' %>
+        <% end %>
+      </div>
+    </div>
+  </div>
 </div>

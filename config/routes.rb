@@ -4,7 +4,7 @@ Rails.application.routes.draw do
   # portfolio
   resources :products, only: [:index]
   resource  :profile,  only: [:show]
-  resource  :contact,  only: [:show]
+  resource  :contact,  only: [:show, :create]
 
   # blog
   namespace :blog do
