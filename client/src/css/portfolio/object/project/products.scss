@@ -1,39 +1,76 @@
 .portfolio-main-p_products{
   display: grid;
-  grid-auto-rows: 337px;
-  grid-template-columns: repeat(auto-fill, 250px);
-  grid-row-gap: 30px;
+  grid-template-columns: repeat(auto-fill, 400px);
+  grid-row-gap: 40px;
   grid-column-gap: 30px;
   justify-content: space-evenly;
 }
 .portfolio-main-p_product_unit {
   border-radius: 5px;
+  background-color: #fff;
   box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.2);
 }
 .portfolio-main-p_product_img {
-  width:  250px;
-  height: 250px;
+  width:  400px;
+  height: 400px;
   border-radius: 5px 5px 0 0;
   vertical-align: top;
 }
+.portfolio-main-p_product_menu {
+  padding: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  height: 175.33px;
+}
 .portfolio-main-p_product_text {
-  background-color: #fff;
-  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
   border-radius: 0 0 5px 5px;
 }
 .portfolio-main-p_product_name {
+  font-size: 22px;
   font-weight: 500;
-  line-height: 20px;
+  line-height: 24px;
+  margin-bottom: 2px;
+  flex-basis: 100%;
 }
 .portfolio-main-p_product_date {
   font-size: 14px;
   line-height: 15px;
   color: #BBBBBB;
-  vertical-align: top;
   margin-bottom: 5px;
+}
+.portfolio-main-p_prodacut_tag_unit {
+  flex-basis: 100%;
+  align-self: flex-end;
 }
 .portfolio-main-p_prodacut_tag {
   padding: 0 5px;
   background-color: rgb(199, 221, 202);
   border-radius: 5px;
+  margin-right: 5px;
+}
+.portfolio-main-p_product_description {
+  margin-bottom: 5px;
+  flex-basis: 100%;
+}
+.portfolio-main-p_product_button_unit {
+  align-self: flex-end;
+  flex-basis: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+.portfolio-main-p_product_button {
+  width: 140px;
+  height: 36px;
+  border-radius: 5px;
+  font-size: 18px;
+  background-color: rgb(103, 206, 171);
+  color: white;
+  cursor: pointer;
+  align-self: flex-end;
+}
+.portfolio-main-p_product_button:hover {
+  background-color: #8DD9D5;
 }
