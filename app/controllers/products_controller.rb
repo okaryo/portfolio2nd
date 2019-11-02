@@ -8,7 +8,8 @@ class ProductsController < ApplicationController
         tags: ['Rails', 'Docker', 'webpack'],
         description: 'My portfolio was reborn with docker, webpack and etc!',
         link_text: 'Already here!',
-        link_url: '#'
+        link_url: '#',
+        external_link: false
       },
       {
         name: 'BTNG',
@@ -17,7 +18,8 @@ class ProductsController < ApplicationController
         tags: ['Vue.js'],
         description: 'You can make CSS buttons visually and easily!',
         link_text: 'Visit site',
-        link_url: products_btng_path
+        link_url: products_btng_path,
+        external_link: true
       },
       {
         name: 'Portfolio',
@@ -26,7 +28,8 @@ class ProductsController < ApplicationController
         tags: ['Rails'],
         description: 'My first portfolio site!',
         link_text: 'Closed',
-        link_url: '#'
+        link_url: '#',
+        external_link: false
       },
       {
         name: 'mkidea',
@@ -35,7 +38,8 @@ class ProductsController < ApplicationController
         tags: ['Rails'],
         description: 'This is a platform to make idea!',
         link_text: 'Visit site',
-        link_url: '#'
+        link_url: 'https://mkidea.jp/',
+        external_link: true
       },
       {
         name: 'BookList',
@@ -44,7 +48,8 @@ class ProductsController < ApplicationController
         tags: ['Rails'],
         description: 'My first WebApp! You can make a books-list and shere it!',
         link_text: 'Closed',
-        link_url: '#'
+        link_url: '#',
+        external_link: false
       },
       {
         name: 'Original Characters',
@@ -53,7 +58,8 @@ class ProductsController < ApplicationController
         tags: ['LINE STAMP'],
         description: 'My original characters!',
         link_text: 'See characters',
-        link_url: '#'
+        link_url: '#',
+        external_link: true
       }
     ]
   end

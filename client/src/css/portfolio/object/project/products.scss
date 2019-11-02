@@ -16,19 +16,23 @@
   border-radius: 5px 5px 0 0;
   vertical-align: top;
 }
+.portfolio-main-p_product_menu {
+  padding: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  height: 175.33px;
+}
 .portfolio-main-p_product_text {
   display: flex;
   flex-wrap: wrap;
-  // flex-direction: column;
-  padding: 15px;
+  align-content: flex-start;
   border-radius: 0 0 5px 5px;
-  height: 175.33px;
 }
 .portfolio-main-p_product_name {
   font-size: 22px;
   font-weight: 500;
   line-height: 24px;
-  margin-bottom: 5px;
+  margin-bottom: 2px;
   flex-basis: 100%;
 }
 .portfolio-main-p_product_date {
@@ -37,8 +41,9 @@
   color: #BBBBBB;
   margin-bottom: 5px;
 }
-.portfolio-main-p_prodacut_tag {
+.portfolio-main-p_prodacut_tag_unit {
   flex-basis: 100%;
+  align-self: flex-end;
 }
 .portfolio-main-p_prodacut_tag {
   padding: 0 5px;
@@ -64,6 +69,7 @@
   background-color: rgb(103, 206, 171);
   color: white;
   cursor: pointer;
+  align-self: flex-end;
 }
 .portfolio-main-p_product_button:hover {
   background-color: #8DD9D5;
