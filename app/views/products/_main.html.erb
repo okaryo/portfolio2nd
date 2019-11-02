@@ -2,13 +2,23 @@
   <div class="portfolio-main-p_products">
     <% @products.each do |product| %>
       <div class="portfolio-main-p_product_unit">
-        <img class="portfolio-main-p_product_img" src=<%= webpack_asset_path('images/' + product[:name] + '.png') %> alt=<%= product[:name] %>>
+        <img class="portfolio-main-p_product_img" src=<%= webpack_asset_path('images/' + product[:image_name] + '.png') %> alt=<%= product[:name] %>>
         <div class="portfolio-main-p_product_text">
-          <p class="portfolio-main-p_product_name"><%= product[:name] %></p>
-          <p class="portfolio-main-p_product_date"><%= product[:date] %></p>
-          <% product[:tags].each do |tag| %>
-            <span class="portfolio-main-p_prodacut_tag"><%= tag %></span>
-          <% end %>
+          <p class="portfolio-main-p_product_name">
+            <%= product[:name] %>
+            <span class="portfolio-main-p_product_date"><%= product[:date] %></span>
+          </p>
+          <div class="portfolio-main-p_prodacut_tag_unit">
+            <% product[:tags].each do |tag| %>
+              <span class="portfolio-main-p_prodacut_tag"><%= tag %></span>
+            <% end %>
+          </div>
+          <p class="portfolio-main-p_product_description"><%= product[:description] %></p>
+          <div class="portfolio-main-p_product_button_unit">
+            <%= link_to product[:link_url] do %>
+              <button class="portfolio-main-p_product_button"><%= product[:link_text] %></button>
+            <% end %>
+          </div>
         </div>
       </div>
     <% end %>
