@@ -1,6 +1,6 @@
 .portfolio-main-p_products{
   display: grid;
-  grid-template-columns: repeat(auto-fill, 400px);
+  grid-template-columns: repeat(auto-fill, 350px);
   grid-row-gap: 40px;
   grid-column-gap: 30px;
   justify-content: space-evenly;
@@ -11,8 +11,8 @@
   box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.2);
 }
 .portfolio-main-p_product_img {
-  width:  400px;
-  height: 400px;
+  width:  350px;
+  height: 350px;
   border-radius: 5px 5px 0 0;
   vertical-align: top;
 }
@@ -71,6 +71,7 @@
   cursor: pointer;
   align-self: flex-end;
 }
-.portfolio-main-p_product_button:hover {
+.portfolio-main-p_product_button:active {
   background-color: #8DD9D5;
+  border: 1px solid rgb(184, 211, 184);
 }
