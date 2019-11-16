@@ -12,6 +12,16 @@ class ProductsController < ApplicationController
         external_link: false
       },
       {
+        name: 'timechecker',
+        image_name: 'timechecker',
+        date: 'Nov. 10, 2019',
+        tags: ['VSCode Extension', 'TypeScript'],
+        description: 'Handmade VSCode Extension! This extension displays current time and passed time since opening editer-window at the status bar.',
+        link_text: 'See Extension',
+        link_url: 'https://marketplace.visualstudio.com/items?itemName=okaryo.timechecker',
+        external_link: true
+      },
+      {
         name: 'BTNG',
         image_name: 'BTNG',
         date: 'July 06, 2019',
